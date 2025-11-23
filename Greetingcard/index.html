@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Wishes</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+      .box {
+  animation: zoomOut 5s ease-out forwards;
+  animation-delay: 1s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 7s ease forwards;
+  opacity: 0; /* start hidden */
+}
+
+
+
+        /* FULL-SCREEN COVER WITH BUTTON */
+        #cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231017/pngtree-dancing-stars-happy-new-year-holiday-background-with-painting-fireworks-image_13943160.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #revealBtn {
+            margin-top: 100px;
+            padding: 22px 32px;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Castellar, Arial, Helvetica, sans-serif;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            background-color: #000000;
+            color:#FFD700;
+            backdrop-filter: blur(4px);
+            box-shadow: 3px 5px 10px  #FFBF00;
+        }
+         #revealBtn:hover{
+            color: black;
+            background-color: orange;
+         }
+        body{
+            background: linear-gradient(#002f5e, #035f9e);
+            overflow: hidden;
+            position: relative;
+            font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .box{
+            padding:0 0.5px;
+            border: 5px solid rgb(47, 81, 100);
+            background-color: #00205B;
+            color: #00BFFF;
+            width: 690px;
+            height: 460px;
+            margin: 140px auto;
+            text-align: center;
+            border-radius: 29px;
+            box-shadow: 5px 10px 25px #061014;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1{
+            font-family: Algerian , Bahnschrift Light Condensed, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #xyz{
+            padding: 0 500px 0 0;
+        }
+        .para2{
+            padding: 0 20px 0 50px;
+            margin: 0 0 2px  0;
+        }
+        .para1{
+            padding: 0 0 0 50px;
+            margin: 0 0 2px  0;
+        }
+        .box:hover{
+            background-color:#647a94;
+            color: #000100;
+        }
+        #end{
+            text-align:right;
+            font-family: Edwardian script ITC,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:20px;
+            color:#CCCCCC;
+        }
+        .para3{
+            margin-right: 220px;
+        }
+
+        /* PARTICLE BACKGROUND */
+        body::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background-image:
+                radial-gradient(rgba(0, 191, 255, 0.9) 2px, transparent 4px),
+                radial-gradient(rgba(0, 255, 255, 0.7) 3px, transparent 6px),
+                radial-gradient(rgba(173, 216, 230, 0.8) 2px, transparent 5px);
+            background-size: 90px 90px, 140px 140px, 180px 180px;
+            animation: stars1 35s linear infinite;
+            opacity: 1;
+            z-index: -2;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: -150px;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background-image:
+                radial-gradient(rgba(135, 206, 250, 0.35) 6px, transparent 10px),
+                radial-gradient(rgba(0, 191, 255, 0.25) 8px, transparent 12px),
+                radial-gradient(rgba(255, 255, 255, 0.3) 5px, transparent 8px);
+            background-size: 160px 160px, 220px 220px, 280px 280px;
+            animation: stars2 55s linear infinite;
+            z-index: -3;
+            opacity: 1;
+        }
+
+        @keyframes stars1 {
+            from { transform: translateY(0); }
+            to   { transform: translateY(-600px); }
+        }
+
+        @keyframes stars2 {
+            from { transform: translateY(0); }
+            to   { transform: translateY(-800px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- COVER PAGE WITH BUTTON -->
+    <div id="cover">
+        <button id="revealBtn">REVEAL THE GREETING MAM </button>
+    </div>
+
+    <!-- ACTUAL CARD -->
+    <main class="box">
+        <div id="container">
+            <div class="wish">
+                <h1>HAPPY NEW YEAR MADAM</h1>
+            </div>
+
+            <p id="xyz">Dear Mam,</p>
+
+            <div class="para1">
+                <blockquote>
+                    <p>
+                        As we step into this New Year, I want to express my heartfelt gratitude.
+                        Your dedication lights the path of your way more beautiful Mam.
+                        May this year bring you abundant happiness, success, and good health blessed with a long and happy life.
+                        Wishing you a truly wonderful New Year Mam.
+                    </p>
+                </blockquote>
+            </div>
+
+            <div class="para2">
+                <p>
+                    I sincerely hope your journey continues to touch the lives of many more students.
+                    May this year bring you even more reasons to smile and flourish, Madam.
+                </p>
+            </div>
+
+            <div class="para3">
+                <p>With deepest respect and warm wishes</p>
+            </div>
+
+            <blockquote id="end">- From the student who respects you beyond limits and feels blessed to learn from you,Mam.</blockquote>
+        </div>
+    </main>
+<script>
+    function confettiBlast() {
+        const duration = 2000;
+        const end = Date.now() + duration;
+
+        const defaults = {
+            startVelocity: 40,
+            spread: 360,
+            ticks: 60,
+            zIndex: 2000
+        };
+
+        function random(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        const interval = setInterval(() => {
+            const timeLeft = end - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            confetti({
+                ...defaults,
+                particleCount: 34,
+                origin: {
+                    x: random(0.8, 0.3),
+                    y: random(0.09, 0.4)
+                }
+            });
+        }, 700);
+    }
+
+    document.getElementById("revealBtn").addEventListener("click", function () {
+        document.getElementById("cover").style.display = "none";
+        confettiBlast();   // 🔥 blast when button is clicked
+    });
+
+    document.getElementById("revealBtn").addEventListener("click", function () {
+    document.getElementById("cover").style.display = "none";
+    const box = document.querySelector(".box");
+    box.classList.add("fade-in");  // Apply fade-in animation
+    confettiBlast();
+});
+
+</script>
+   
+
+</body>
+</html>
